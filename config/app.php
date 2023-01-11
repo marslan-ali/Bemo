@@ -125,7 +125,7 @@ return [
 
     'access_token' => '42gA1S5',
 
-    'dump_path' => 'C:/xampp/mysql/bin/',
+    'dump_path' => env('MYSQL_DUMP_PATH', 'C:/xampp/mysql/bin/'),
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
