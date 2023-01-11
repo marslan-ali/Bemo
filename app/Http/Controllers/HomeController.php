@@ -41,7 +41,7 @@ class HomeController extends Controller
                 ->setDbName(config('database.connections.mysql.database'))
                 ->setUserName(config('database.connections.mysql.username'))
                 ->setPassword(config('database.connections.mysql.password'))
-                ->dumpToFile('storage/' . $fileName);
+                ->dumpToFile('storage/app/public/' . $fileName);
             return Storage::download('public/' . $fileName);
         } catch (\Exception $e) {
             Log::info($e);
